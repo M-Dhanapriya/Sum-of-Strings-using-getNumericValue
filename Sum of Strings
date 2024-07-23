@@ -1,0 +1,18 @@
+class HelloWorld {
+    public static void main(String[] args) {
+    String str1="123";
+    String str2="564";
+    int sum1=0;
+    int sum2=0;
+    for(int i=0;i<str1.length();i++){
+        sum1+=Character.getNumericValue(str1.charAt(i));
+    }
+    for(int i=0;i<str2.length();i++){
+        sum2+=Character.getNumericValue(str2.charAt(i));
+    }
+    System.out.println(sum1);
+    System.out.println(sum2);
+    int result=sum1+sum2;
+    System.out.println("The sum of " +sum1+ " and " +sum2+ " is " +result);
+    }    
+}
